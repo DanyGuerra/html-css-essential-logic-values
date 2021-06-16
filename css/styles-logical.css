@@ -18,6 +18,7 @@ body{
   color: #212121;
   font-family: 'Nunito', sans-serif;
   background: #251F24;
+  color: var(--white30);
 }
 a{
   color: var(--white30);
@@ -25,16 +26,21 @@ a{
 
 header{
   font-size:14px;
-  color:var(--white10)
+  color:var(--white30)
 }
 
+
 header a{
-  color: var(--white10);
+  color: var(--white20);
   text-decoration:none;
 }
 
 header a:hover{
-  color: #8888ff;
+  color: white;
+}
+
+header li{
+  color: var(--white20);
 }
 
 nav details summary{
@@ -43,13 +49,24 @@ nav details summary{
 
 h1{
   font-size:60px;
+  font-weight: normal;
 }
 
 h2{
   font-size:2em;
+  font-weight: normal;
 }
 h3{
   font-size:1.5em;
+  font-weight: normal;
+}
+
+ol li {
+  color:var(--white20)
+}
+
+ul li {
+  color:var(--white20)
 }
 
 .hero{
