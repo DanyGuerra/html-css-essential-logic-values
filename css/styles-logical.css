@@ -2,7 +2,7 @@
   font-size: 18px;
   --white30: white;
   --white20:#A5A3A5;
-  --white10:#616161;
+  --white10:#3A3539;
 }
 
 p{
@@ -19,6 +19,8 @@ body{
   font-family: 'Nunito', sans-serif;
   background: #251F24;
   color: var(--white30);
+  margin: 0;
+  margin: 10px 10px 10px 10px;
 }
 a{
   color: var(--white30);
@@ -69,13 +71,18 @@ ul li {
   color:var(--white20)
 }
 
+pre{
+  background-color:var(--white10)
+}
+
 .hero{
   /* background: #8888ff; */
-  background-image: linear-gradient(to top,rgba(255,255,255,0.3) ,transparent),  url(../images/patron-1.png); /*usamos transparente para el degradado*/
+  /* background-image: linear-gradient(to top,rgba(255,255,255,0.3) ,transparent),  url(../images/patron-1.png); usamos transparente para el degradado */
   /* background-image: linear-gradient(to top,rgba(255,255,255,0.3),red 20px,transparent),  url(../images/patron-1.png); */
   /* background-repeat: no-repeat; */
   /* background-position: left 50px bottom 100px; */
   /* background-size: cover; */
+  background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
   height: 350px;
 }
 
