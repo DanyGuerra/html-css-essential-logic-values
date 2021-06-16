@@ -1,0 +1,91 @@
+:root {
+  font-size: 18px;
+  --white30: white;
+  --white20:#A5A3A5;
+  --white10:#616161;
+}
+
+p{
+  color:var(--white20)
+}
+
+
+html{
+  font-size: 16px;
+}
+
+body{
+  color: #212121;
+  font-family: 'Nunito', sans-serif;
+  background: #251F24;
+}
+a{
+  color: var(--white30);
+}
+
+header{
+  font-size:14px;
+  color:var(--white10)
+}
+
+header a{
+  color: var(--white10);
+  text-decoration:none;
+}
+
+header a:hover{
+  color: #8888ff;
+}
+
+nav details summary{
+  font-weight: bold;
+}
+
+h1{
+  font-size:60px;
+}
+
+h2{
+  font-size:2em;
+}
+h3{
+  font-size:1.5em;
+}
+
+.hero{
+  /* background: #8888ff; */
+  background-image: linear-gradient(to top,rgba(255,255,255,0.3) ,transparent),  url(../images/patron-1.png); /*usamos transparente para el degradado*/
+  /* background-image: linear-gradient(to top,rgba(255,255,255,0.3),red 20px,transparent),  url(../images/patron-1.png); */
+  /* background-repeat: no-repeat; */
+  /* background-position: left 50px bottom 100px; */
+  /* background-size: cover; */
+  height: 350px;
+}
+
+.section-content{
+  counter-reset:titleList;
+}
+
+.section-content h3{
+  counter-increment: titleList;
+}
+
+
+.section-content h3::before{
+  /* content: counter(titleList,upper-roman) */
+  content: "-" counter(titleList) "-";
+}
+
+.section-content h3::after{
+  content: '';
+  width: 32px;
+  height: 4px;
+  background: black;
+  display: inline-block;
+
+}
+
+::selection{
+ background:#ddddff;
+}
+
