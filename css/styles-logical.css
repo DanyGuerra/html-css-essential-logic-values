@@ -153,3 +153,20 @@ blockquote{
 .main hr{
   display: none;
 }
+
+.main{
+  border: 5px solid red;
+
+}
+
+.wrapper{
+  /* border: 5px solid yellow; */
+  /* Usar  inline-size en logico en lugar de lugar
+  width*/
+  border: 5px solid yellow;
+  inline-size: 900px;
+  margin: auto;
+
+  /* usar block-size en vez de height */
+
+}
