@@ -20,8 +20,21 @@ body{
   background: #251F24;
   color: var(--white30);
   margin: 0;
-  margin: 10px 10px 10px 10px;
+  /* writing-mode: vertical-lr; */
+
+  /* modo fisico */
+  /* margin: 0 100px; */
+
+  /* modo logico  */
+  /* el margen inline es el margen a lo largo de la
+  linea de lectura para visualizar esto activar
+  writing-mode: vertical-lr;*/
+  /* margin-inline: 100px; */
+  /* margin-block: 100px; */
+  /* margin-block-start: 50px; */
+
 }
+
 a{
   color: var(--white30);
 }
@@ -49,18 +62,30 @@ nav details summary{
   font-weight: bold;
 }
 
+
+
+
 h1{
   font-size:60px;
   font-weight: normal;
+  margin-block-start: 64px;
+  margin-block-end: 16px;
 }
 
 h2{
   font-size:2em;
   font-weight: normal;
+  margin-block: 40px;
 }
 h3{
   font-size:1.5em;
-  font-weight: normal;
+  font-weight: 600;
+  margin-block: 16px;
+}
+
+hr{
+  margin-block: 40px;
+  border-color: rgba(97, 97, 97, 0.2);
 }
 
 ol li {
@@ -89,6 +114,11 @@ pre{
 .section-content{
   counter-reset:titleList;
 }
+.section-content img{
+  margin-block-start:40px;
+  display:block;
+
+}
 
 .section-content h3{
   counter-increment: titleList;
@@ -97,7 +127,7 @@ pre{
 
 .section-content h3::before{
   /* content: counter(titleList,upper-roman) */
-  content: "-" counter(titleList) "-";
+  content:  counter(titleList) ". ";
 }
 
 .section-content h3::after{
@@ -113,3 +143,13 @@ pre{
  background:#ddddff;
 }
 
+blockquote{
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  background-color: var(--white10);
+  border-radius: 8px;
+}
+
+.main hr{
+  display: none;
+}
