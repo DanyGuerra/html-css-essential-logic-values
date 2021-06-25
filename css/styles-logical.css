@@ -206,12 +206,6 @@ blockquote p{
   display: none;
 }
 
-.main{
-  /* border: 5px solid red; */
-
-}
-
-
 .wrapper{
   /* border: 5px solid yellow; */
   /* Usar  inline-size en logico en lugar de lugar
@@ -234,9 +228,6 @@ blockquote p{
 
 }
 
-.slider {
-
-}
 
 .video{
   margin: 0;
@@ -320,11 +311,6 @@ blockquote p{
 
 /* Responsive design */
 @media screen and (min-width: 1366px){
-  body {
-    /* background-color: red; */
-
-  }
-
   .hero {
     block-size: 350px;
   }
