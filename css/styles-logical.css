@@ -62,9 +62,6 @@ nav details summary{
   font-weight: bold;
 }
 
-
-
-
 h1{
   font-size:60px;
   font-weight: normal;
@@ -97,7 +94,23 @@ ul li {
 }
 
 pre{
-  background-color:var(--white10)
+  background-color:var(--white10);
+  padding:40px;
+  overflow:auto;
+  border-radius:8px;
+  border:10px solid #314755;
+
+  /* border-left:5px solid blue; */
+  /* Su equivalente en valores logicos
+  es el siguiente */
+  /* border-inline-start: 5px solid #ea00ff;
+  border-block: 20px solid pink;
+  border-inline-end: 5px solid green; */
+  border: 10px solid #5551ff;
+  box-shadow: -10px 10px 0 0 #ABAAF6;
+  margin-block-end: 40px;
+  border-start-start-radius: 40px;
+  border-end-end-radius: 20px
 }
 
 .hero{
@@ -117,6 +130,9 @@ pre{
 .section-content img{
   margin-block-start:40px;
   display:block;
+  max-inline-size: 100%;
+  /* el equivalente en valores fisicos */
+  /* max-width: 100%; */
 
 }
 
@@ -130,24 +146,35 @@ pre{
   content:  counter(titleList) ". ";
 }
 
-.section-content h3::after{
+/* .section-content h3::after{
   content: '';
   width: 32px;
   height: 4px;
-  background: black;
+  background: var(--white30);
   display: inline-block;
 
-}
+} */
 
 ::selection{
- background:#ddddff;
+ background:#314755;
 }
 
 blockquote{
   margin-block-start: 80px;
   margin-block-end: 63px;
-  background-color: var(--white10);
   border-radius: 8px;
+  background-color: var(--white10);
+  padding-inline-end: 24px;
+  padding-inline-start: 24px;
+  padding-block-end: 24px;
+  padding-block-start: 24px;
+  line-height:32px;
+  font-size:24px;
+
+}
+
+blockquote p{
+  color:var(--white30)
 }
 
 .main hr{
@@ -155,18 +182,29 @@ blockquote{
 }
 
 .main{
-  border: 5px solid red;
+  /* border: 5px solid red; */
 
 }
+
 
 .wrapper{
   /* border: 5px solid yellow; */
   /* Usar  inline-size en logico en lugar de lugar
   width*/
-  border: 5px solid yellow;
-  inline-size: 900px;
-  margin: auto;
+  /* border: 5px solid yellow; */
+  /* inline-size: 900px; */
 
   /* usar block-size en vez de height */
+  /* para max-width y max-height usar los
+  equivalentes logicos max-inline-size y
+  max-block-size*/
+  max-inline-size: 902px;
+  margin: auto;
+
+
+}
+
+.main-content {
+  padding-inline:16px;
 
 }
