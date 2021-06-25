@@ -39,38 +39,6 @@ a{
   color: var(--white30);
 }
 
-header{
-  font-size:14px;
-  color:var(--white30);
-  position: absolute;
-  /* Equivalente a top */
-  /* inset-block-start: 0px; */
-
-  /* Equivalente a bottom */
-  /* inset-block-end: 0px; */
-
-  /* Equivalente a left */
-  /* inset-inline-start: 0px; */
-
-  /* Equivalente a rigth */
-  /* inset-inline-end: 0px; */
-
-
-  inset-inline-start: -250px;
-  inline-size: 208px;
-  inset-block-start:65px;
-}
-
-.header{
-  position:sticky;
-   inset-block-start: 20px;
-}
-
-.header-content{
-  position:relative;
-}
-
-
 header a{
   color: var(--white20);
   text-decoration:none;
@@ -89,9 +57,9 @@ nav details summary{
 }
 
 h1{
-  font-size:60px;
+  font-size:40px;
   font-weight: normal;
-  margin-block-start: 64px;
+  margin-block-start: 20px;
   margin-block-end: 16px;
 }
 
@@ -119,6 +87,7 @@ ul li {
   color:var(--white20)
 }
 
+
 pre{
   background-color:var(--white10);
   padding:40px;
@@ -139,6 +108,35 @@ pre{
   border-end-end-radius: 20px
 }
 
+header{
+  margin-block-start: 20px;
+  font-size:14px;
+  color:var(--white30);
+
+  /* Equivalente a top */
+  /* inset-block-start: 0px; */
+
+  /* Equivalente a bottom */
+  /* inset-block-end: 0px; */
+
+  /* Equivalente a left */
+  /* inset-inline-start: 0px; */
+
+  /* Equivalente a rigth */
+  /* inset-inline-end: 0px; */
+
+}
+
+.header-content{
+  padding-inline: 20px;
+
+}
+
+.header-content ol li {
+  /* background-color:red; */
+  margin-block-end: 20px;
+}
+
 .hero{
   /* background: #8888ff; */
   /* background-image: linear-gradient(to top,rgba(255,255,255,0.3) ,transparent),  url(../images/patron-1.png); usamos transparente para el degradado */
@@ -147,7 +145,8 @@ pre{
   /* background-position: left 50px bottom 100px; */
   /* background-size: cover; */
   background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
-  height: 350px;
+  block-size: 70px;
+
 }
 
 .section-content{
@@ -292,5 +291,58 @@ blockquote p{
 .form input[type="submit"]{
   background-color: #157EFB;
   border: none;
+
+}
+
+
+
+/* Responsive design */
+@media screen and (min-width: 1366px){
+  body {
+    /* background-color: red; */
+
+  }
+
+  .hero {
+    block-size: 350px;
+  }
+
+  .header{
+    position:sticky;
+     inset-block-start: -45px;
+  }
+  .header-content{
+    position:relative;
+    inset-block-start:65px;
+    padding-inline:0;
+  }
+  header{
+    font-size:14px;
+    color:var(--white30);
+    position: absolute;
+    /* Equivalente a top */
+    /* inset-block-start: 0px; */
+
+    /* Equivalente a bottom */
+    /* inset-block-end: 0px; */
+
+    /* Equivalente a left */
+    /* inset-inline-start: 0px; */
+
+    /* Equivalente a rigth */
+    /* inset-inline-end: 0px; */
+
+
+    inset-block-start:0px;
+    inset-inline-start: -208px;
+    inline-size: 188px;
+  }
+
+  h1 {
+    font-size:60px;
+    margin-block-start: 64px;
+
+  }
+
 
 }
