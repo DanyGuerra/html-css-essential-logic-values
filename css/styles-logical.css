@@ -294,7 +294,29 @@ blockquote p{
 
 }
 
+.footer{
+  margin-block-start: 80px;
+  block-size: 174px;
+  inline-size: 100%;
+  background-color:white;
+}
 
+.footer h3{
+  color: black;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 48px;
+}
+
+.footer figure{
+  text-align: center;
+
+}
+
+.footer img{
+  margin-inline: 8px;
+
+}
 
 /* Responsive design */
 @media screen and (min-width: 1366px){
@@ -343,6 +365,5 @@ blockquote p{
     margin-block-start: 64px;
 
   }
-
 
 }
