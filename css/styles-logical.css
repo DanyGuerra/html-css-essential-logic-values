@@ -9,7 +9,6 @@ p{
   color:var(--white20)
 }
 
-
 html{
   font-size: 16px;
 }
@@ -68,6 +67,7 @@ h2{
   font-weight: normal;
   margin-block: 40px;
 }
+
 h3{
   font-size:1.5em;
   font-weight: 600;
@@ -86,7 +86,6 @@ ol li {
 ul li {
   color:var(--white20)
 }
-
 
 pre{
   background-color:var(--white10);
@@ -124,12 +123,10 @@ header{
 
   /* Equivalente a rigth */
   /* inset-inline-end: 0px; */
-
 }
 
 .header-content{
   padding-inline: 20px;
-
 }
 
 .header-content ol li {
@@ -146,25 +143,23 @@ header{
   /* background-size: cover; */
   background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
   block-size: 70px;
-
 }
 
 .section-content{
   counter-reset:titleList;
 }
+
 .section-content img{
   margin-block-start:40px;
   display:block;
   max-inline-size: 100%;
   /* el equivalente en valores fisicos */
   /* max-width: 100%; */
-
 }
 
 .section-content h3{
   counter-increment: titleList;
 }
-
 
 .section-content h3::before{
   /* content: counter(titleList,upper-roman) */
@@ -195,7 +190,6 @@ blockquote{
   padding-block-start: 24px;
   line-height:32px;
   font-size:24px;
-
 }
 
 blockquote p{
@@ -219,15 +213,11 @@ blockquote p{
   max-block-size*/
   max-inline-size: 902px;
   margin: auto;
-
-
 }
 
 .main-content {
   padding-inline:16px;
-
 }
-
 
 .video{
   margin: 0;
@@ -245,7 +235,6 @@ blockquote p{
   white-space: nowrap;
   /* Quita el espacio entre los videos del slide */
   font-size:0;
-
 }
 
 .slider-bullet-list{
@@ -282,7 +271,6 @@ blockquote p{
 .form input[type="submit"]{
   background-color: #157EFB;
   border: none;
-
 }
 
 .footer{
@@ -301,7 +289,6 @@ blockquote p{
 
 .footer figure{
   text-align: center;
-
 }
 
 .footer img{
@@ -319,11 +306,13 @@ blockquote p{
     position:sticky;
      inset-block-start: -45px;
   }
+
   .header-content{
     position:relative;
     inset-block-start:65px;
     padding-inline:0;
   }
+
   header{
     font-size:14px;
     color:var(--white30);
@@ -340,7 +329,6 @@ blockquote p{
     /* Equivalente a rigth */
     /* inset-inline-end: 0px; */
 
-
     inset-block-start:0px;
     inset-inline-start: -208px;
     inline-size: 188px;
@@ -351,5 +339,4 @@ blockquote p{
     margin-block-start: 64px;
 
   }
-
 }
