@@ -41,7 +41,33 @@ a{
 
 header{
   font-size:14px;
-  color:var(--white30)
+  color:var(--white30);
+  position: absolute;
+  /* Equivalente a top */
+  /* inset-block-start: 0px; */
+
+  /* Equivalente a bottom */
+  /* inset-block-end: 0px; */
+
+  /* Equivalente a left */
+  /* inset-inline-start: 0px; */
+
+  /* Equivalente a rigth */
+  /* inset-inline-end: 0px; */
+
+
+  inset-inline-start: -250px;
+  inline-size: 208px;
+  inset-block-start:65px;
+}
+
+.header{
+  position:sticky;
+   inset-block-start: 20px;
+}
+
+.header-content{
+  position:relative;
 }
 
 
