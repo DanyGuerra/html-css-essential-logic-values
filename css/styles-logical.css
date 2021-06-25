@@ -239,16 +239,42 @@ blockquote p{
 
 }
 
-.slider-slide h1{
+.video{
   margin: 0;
   display:inline-block;
   width: 100%;
+  height:auto;
+  aspect-ratio:16/9;
 }
 
 .slider-container {
-  block-size: 100px;
+  /* block-size: 100px; */
   display:block;
-  overflow: auto;
+  overflow: hidden;
   scroll-behavior: smooth;
   white-space: nowrap;
+  /* Quita el espacio entre los videos del slide */
+  font-size:0;
+
+}
+
+.slider-bullet-list{
+  text-align: center;
+  margin-block-start: 10px;
+}
+
+.slider-bullet{
+  display:inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background-color:white;
+  border-radius: 50%;
+}
+
+.form input{
+  inline-size:100%;
+  border:1px solid var(--white30);
+  background-color:#251F24;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
