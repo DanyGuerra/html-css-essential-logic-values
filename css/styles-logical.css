@@ -293,7 +293,7 @@ blockquote p{
 
 .footer img{
   margin-inline: 8px;
-
+  block-size:24px;
 }
 
 /* Responsive design */
